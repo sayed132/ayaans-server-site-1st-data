@@ -17,7 +17,7 @@ const OrderItemsSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
-    DiscountPrice: {
+    discountPrice: {
         type: Number,
         required: true,
     },
