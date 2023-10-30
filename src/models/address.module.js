@@ -23,14 +23,14 @@ const AddressSchema = new mongoose.Schema({
         default: "CUSTOMER"
     },
     zipCode: {
-        type: number,
+        type: Number,
     },
     user: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "users"
     },
     phone:{
-        type: string,
+        type: String,
         required: true,
     }
 });

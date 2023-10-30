@@ -5,5 +5,5 @@ const PORT = 8000;
 
 app.listen(PORT, async()=>{
     await connectDB();
-console.log("this server running in this:",PORT, 'port ' );
+console.log("this server running successfully in this:",PORT, 'port ' );
 })
