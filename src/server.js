@@ -1,5 +1,5 @@
-const app = require("./index");
-const { connectDB } = require("./config/db");
+const app = require("./index.js");
+const { connectDB } = require("./config/db.js");
 
 const PORT = 8000;
 

@@ -1,6 +1,6 @@
-const Cart = require("../models/cart.module");
-const CartItem = require("../models/cartItem.module");
-const Product = require("../models/product.module");
+const Cart = require("../models/cart.module.js");
+const CartItem = require("../models/cartItem.module.js");
+const Product = require("../models/product.module.js");
 
 async function createCart(user) {
     try {

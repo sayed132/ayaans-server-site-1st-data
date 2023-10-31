@@ -1,4 +1,4 @@
-const cartService = require('../services/cart.service')
+const cartService = require('../services/cart.service.js')
 
 const findUserCart = async (req, res) => {
     const user = req.user

@@ -1,4 +1,4 @@
-const userService = require('../services/user.service');
+const userService = require('../services/user.service.js');
 
 async function updateCartItem(userId, cartItemId, cartItemData) {
     try {

@@ -1,6 +1,6 @@
-const Address = require('../models/address.module');
-const Order = require('../models/order.module');
-const cartService = require('../services/cart.service');
+const Address = require('../models/address.module.js');
+const Order = require('../models/order.module.js');
+const cartService = require('../services/cart.service.js');
 
 async function createOrder(user, shippingAddress) {
     let address;

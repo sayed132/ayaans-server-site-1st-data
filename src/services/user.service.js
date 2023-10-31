@@ -1,13 +1,12 @@
-const User = require("../models/user.model");
-const jwtProvider = require("../config/jwtProvider");
+const User = require("../models/user.model.js");
+const jwtProvider = require("../config/jwtProvider.js");
 const bcrypt = require("bcrypt");
-const { findById } = require("../models/review.module");
 
 const createUser = async (userData) => {
     try {
-        let { FirstName, LastName, email } = userData;
+        let { FirstName, LastName, email, password } = userData;
 
-        const isUserExist = await User.findOne(email);
+        const isUserExist = await User.findOne({email});
 
         if (isUserExist) {
             throw new Error("User already exists with email", email)
@@ -42,7 +41,7 @@ const findUserById = async (userId) => {
 
 const getUserByEmail = async (email) => {
     try {
-        const user = await User.findOne(email);
+        const user = await User.findOne({email});
         if (!user) {
             throw new Error("User not found with email", email);
         }

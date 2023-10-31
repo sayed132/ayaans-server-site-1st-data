@@ -1,5 +1,5 @@
-const Category = require("../models/category.module");
-const Product = require("../models/product.module");
+const Category = require("../models/category.module.js");
+const Product = require("../models/product.module.js");
 
 async function createProduct(reqData) {
     let topLevel = await Category.findOne({ name: reqData.topLevelCategory })

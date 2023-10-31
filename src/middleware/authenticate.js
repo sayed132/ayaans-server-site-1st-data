@@ -1,5 +1,5 @@
-const jwtProvider = require('../config/jwtProvider')
-const userService = require('../services/user.service')
+const jwtProvider = require('../config/jwtProvider.js')
+const userService = require('../services/user.service.js')
 
 const authenticate = async (req, res, next) => {
     try {

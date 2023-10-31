@@ -1,6 +1,6 @@
-const userService = require("../services/user.service");
-const jwtProvider = require("../config/jwtProvider");
-const cartService = require("../services/cart.service");
+const userService = require("../services/user.service.js");
+const jwtProvider = require("../config/jwtProvider.js");
+const cartService = require("../services/cart.service.js");
 const bcrypt = require("bcrypt");
 
 const register = async (req,res)=>{
